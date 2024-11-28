@@ -38,9 +38,9 @@ export class LoginComponent {
   }
 
   login(){
-    this.http.post('',{
+    this.http.post('/users/login',{
       email: this.email,
-      passowrd:this.password
+      password:this.password
     }).subscribe((data)=>{
       console.log(data);
     })
